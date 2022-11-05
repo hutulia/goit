@@ -9,7 +9,7 @@ echo <<<HTML
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Заголовок {$date}</h1>
+        <h1>Заголовок ТУТ БУДЕТ ВРЕМЯ</h1>
 HTML;
 
 $count = 7;
@@ -19,6 +19,13 @@ for($i = 1; $i <= $count ; $i++){
 }
 
 echo <<<HTML
+    <script>
+        setTimeout(()=>{
+            setInterval(()=>{
+                document.querySelector('h1').innerHTML = 'Заголовок '+(new Date().toISOString());
+            },1000);
+        },3000)
+    </script>
     </body>
 </html>
 HTML;
