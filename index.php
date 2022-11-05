@@ -15,7 +15,7 @@ HTML;
 $count = 5;
 
 for($i = 1; $i <= $count ; $i++){
-    echo "<p>{$i})Текст текст текст</p>";
+    echo "<p>{$i}) Текст текст текст</p>";
 }
 
 echo <<<HTML
