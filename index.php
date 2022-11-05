@@ -12,7 +12,7 @@ echo <<<HTML
         <h1>Заголовок {$date}</h1>
 HTML;
 
-$count = 5;
+$count = 7;
 
 for($i = 1; $i <= $count ; $i++){
     echo "<p>{$i}) Текст текст текст</p>";
